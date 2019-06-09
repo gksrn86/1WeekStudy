@@ -7,6 +7,7 @@ function sayHello(name, age){
   console.log(greetNicolas)
 */
 
+//객체 생성 후 두 변수의 더하기 빼기 곱셈 나누기를 함수로 표현후 
 const calculator0 = {
   plus: function(a, b){
     return a + b;
