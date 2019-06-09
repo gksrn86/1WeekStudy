@@ -12,3 +12,5 @@ console.log(monday,tue,wed,thu,fri);
 const dayOfWeek = ["Mon","Thu","Wed","Thu","Fri","Sat","Sun", true];
 
 console.log(dayOfWeek[2]);
+
+//배열을 사용하는 방법 
