@@ -1,3 +1,2 @@
-select avg(colume_name)
-from table_name
-where condition;
+select * from Customers
+where Countty IN ('Norway', 'France');
