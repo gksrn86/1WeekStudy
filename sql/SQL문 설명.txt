@@ -1,7 +1,40 @@
-������ + E Ž���� ����
-������ + R ����(�н����)
-������ + D  ����ȭ�� <-> ���� ������ ���ϵ�
-������ + L  ���ɱ�(����)
-CTRL + N  ���� ����� Ž���� ����
-CTRL + F �ͽ��÷ξ�, ��Ŭ���� �ܾ� ã��
-F12 ������ ���
+SHOW DATABASES => 데이터베이스 정보 보기
+SHOW TABLES => 테이블 정보
+SHOW TABLE STATUS => 테이블 전체 정보 보기
+DESCRIRE[아무 특정 값] => 특정한 테이블에 대해서 상세 정보
+COUNTY, COUNTYLANGUAGE => 두개의 정보 보기 DESC COUNTY, COUNTYLANGUAGE;
+
+SELECT * FROM CITY; => CITY 전체의 컬럼에 대해서 본다.
+
+SELECT NAME, POPULATION FROM CITY; => NAME과 POPULATION을 보겠다는 의미
+
+SELECT * FROM CITY 
+WHERE POPULATION 800000000; =>  조회하는 결과에 특정한 조건으로 원하는 데이터만 보고 싶을 때
+
+관계 연산자
+OR, AND, 조건 연산자 <=, =>  , < , > , = 등등
+연산자의 조합으로 데이터를 효율적으로 추출
+
+LIKE
+문자열의 내용 검색을 위해서 LIKE 연산자 사용
+한글자와 매치하기 위해서는 ''사용
+문자 뒤에 % 무엇이든 % 허용
+SELECT *
+FROM CITY
+WHERE NAME LIKE 'Tel%'
+
+서브쿼리
+쿼리문 안에 또 쿼리문을 생성하고 싶을 때
+서브쿼리 결과가 둘 이상이면 에러발생
+SELECT * FROM WHERE COUNTY CODE = (SELECT COUNTYCode from city where Name = 'seoul');
+
+ANY
+서브 쿼리의 여러개의 결과 중에서 한가지만 만족해도 가능
+
+SOME 
+ANY와 동일한 의미 
+= ANY 구문은 IN과 동일
+
+ALL 
+서브 쿼리의 여러개의 결과를 모두 만족해야함
+
