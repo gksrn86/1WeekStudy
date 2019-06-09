@@ -1,3 +1,4 @@
-select avg(colume_name)
-from table_name
-where condition;
+select *
+from Orders
+INNER JOIN Customers
+ON Orders.CustomerID=Customers.CustomerID;
