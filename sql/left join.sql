@@ -1,3 +1,4 @@
-select avg(colume_name)
-from table_name
-where condition;
+select Customers.CustomerName, Orders.OrderID
+from Customers
+LEFT JOIN Ordes ON Customers.CustomerID = Orders.CustomerID
+ORDER BYS Customers.CustomerName;
