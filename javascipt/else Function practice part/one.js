@@ -14,7 +14,7 @@ function handleClick(){
 
 function init(){
   title.style.color = "BASE_COLOR";
-  title.addEventListener("click", handleClick);
+  title.addEventListener("click", handleClick);  //텍스트의 클릭시 색깔을 변경이 가능하도록
 }
 init();
 
@@ -25,5 +25,5 @@ function handleOnline(){
   console.log("Welcome back");
 }
 
-window.addEventListener("offline", handleOffline);
+window.addEventListener("offline", handleOffline); //와이파이가 있을 때 와 없을 때 다른 출력이 나오도록 
 window.addEventListener("online", handleOnline);
