@@ -1,0 +1,19 @@
+body {
+	background-color: #ecf0f1;
+}
+
+body{
+	color: #34495e;
+}
+
+p{
+	font-family: verdana;
+	font-size: 20px;
+}
+
+.form{
+	display: none;
+}
+.showing{
+	display: block;
+}
